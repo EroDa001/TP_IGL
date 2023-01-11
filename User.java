@@ -12,7 +12,10 @@ public class User {
 
 	}
 
-	public void User(int id, String username, String password) {
+	public User(int id, String username, String password) {
+		this.id=id;
+		this.username=username;
+		this.password=password;
 
 	}
 
@@ -28,15 +31,18 @@ public class User {
 
 	}
 
-	public void show_username() {
+	public void show_userinfos() {
+		System.out.println("username :"+username+"password :"+password);
 
 	}
 
 	public void getUsername() {
+		return username;
 
 	}
 
 	public void getPassword() {
+		return password;
 
 	}
 
